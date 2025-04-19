@@ -1,0 +1,20 @@
+---
+ - name: playbook with group
+   hosts: mywebservers
+   become: yes
+   gather_facts: yes
+   tasks:
+   - name: i want to install apache2 with group 
+     apt: 
+       name: apache2
+       state: present
+     when: ansible_os_family=debian
+
+  - name: i want to start apache2 webserver
+     service:
+            
+
+
+
+ 
+

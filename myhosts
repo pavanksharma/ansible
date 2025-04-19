@@ -3,5 +3,10 @@
 172.31.6.253
 
 [myappserver]
-172.31.5.252
-172.31.6.253
+172.31.5.256
+172.31.6.258
+
+[mywebservers:vars]
+key= value
+mywebpackageonubuntu=apcahe2
+mywebpackageonRedhat=httpd
