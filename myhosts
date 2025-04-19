@@ -6,7 +6,9 @@
 172.31.5.256
 172.31.6.258
 
+/# shifting below into separate file for group_vars 
 [mywebservers:vars]
 key= value
-mywebpackageonubuntu=apcahe2
-mywebpackageonRedhat=httpd
+mywebpackageonubuntu= apcahe2
+mywebpackageonRedhat= httpd
+#/
