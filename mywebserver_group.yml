@@ -5,7 +5,7 @@
    gather_facts: yes
    tasks:
    - name: i want to install apache2 with group 
-     apt: 
+     dnf: 
        name: "{{mywebpackageonubuntu}}"
        state: present
      when: ansible_os_family==debian
