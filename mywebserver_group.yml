@@ -5,7 +5,7 @@
    gather_facts: yes
    tasks:
    - name: i want to install apache2 with group 
-     dnf: 
+     apt: 
        name: "{{mywebpackageonubuntu}}"
        state: present
      when: ansible_os_family==debian
@@ -14,8 +14,13 @@
      service:
       name: "{{mywebpackageonubuntu}}"
       state: started
-     when: ansible_os_family==debian   
-            
+     when: ansible_os_family==debian  
+
+   - name: i want to install apache2 with group in red hat 
+     dnf:  
+       name: "{{mywebpackageonRedhat}}"
+       state: present
+     when: ansible_os_family==Redhat            
 
 
 

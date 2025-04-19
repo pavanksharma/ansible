@@ -1,0 +1,14 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasks:
+   - name: install java in debian
+     apt: 
+      name: "{{myjavapackageonubuntu}}"
+      state: present 
+
+   - name: install java in Redhat
+     dnf: 
+      name: "{{myjavapackageonRedhat}}"
+      state: present 
+
